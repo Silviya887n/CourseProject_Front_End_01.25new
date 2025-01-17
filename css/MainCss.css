@@ -2,6 +2,10 @@
             padding:0;
             margin: 0;
         }
+
+        body{
+          font-family: 'PT Serif', serif;
+        }
         .header1{
             height: auto; 
             /* height:514px; */
@@ -338,6 +342,7 @@
     .dropdownmenu_show{
       
       display: block;
+      color:darkblue;
      
     }
     .dropdownmenu_show ul{
@@ -353,7 +358,7 @@
       /* background-color: #f9f9f9; */
       min-width: 160px;
       z-index: 1;
-      color:#fff;
+     
 
     }
     
@@ -409,6 +414,20 @@
      margin-top:30px;
   }
 
+  @media only screen and  (max-width:600px) {
+    .wrapper ul{   
+      display: grid;
+      margin-top:30px auto;
+    }
+    
+  }
+
+  @media (max-width:600px) {
+    .wrapper  h2{
+      color: crimson;
+    }
+    
+  }
   .wrapper{
     margin-top:30px;
   }

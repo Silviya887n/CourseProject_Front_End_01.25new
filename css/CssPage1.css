@@ -187,6 +187,13 @@
     display: flex;
     justify-content: space-around;
   }
+
+  @media (max-width:600px) {
+    .choose-us ul{
+    display: flex;
+    flex-direction: column;
+    }
+  }
   
   .choose-us li {
     flex: 0 0 25%;

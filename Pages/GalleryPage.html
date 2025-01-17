@@ -80,6 +80,7 @@ function showSlides() {
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
   captionText.innerHTML = "Our Pets";
+  captionText.style.fontSize="x-large";
 }
     </script>      
     <link rel="stylesheet" href="../css/MainCss.css">
@@ -130,6 +131,17 @@ body{
   /* height: 680px; */
   margin:0 auto;
 }
+
+
+
+@media (max-width:600px) {
+  .containerg {
+  width: 600px;
+  min-width:250px;
+  } 
+}
+
+
 .inner-section{
   display: flex;
   flex-wrap: wrap;
@@ -205,8 +217,15 @@ body{
   background-color:mistyrose;
   padding: 2px 16px;
   color:darkmagenta;
-  width: 1100px;
+  width: auto;
   height: 50px;
+}
+
+@media (max-width:600px) {
+  .caption-container {
+    width:600px;
+    min-width: 250px;
+  }
 }
 
 .row:after {
@@ -305,7 +324,7 @@ window.onclick = function(event) {
        <div class="dropdown-content"  id="myDropdown1">
         <li><a href="../Pages/PriceList.html">PriceList</a></li>
         <li><a href="../Pages/GalleryPage.html">Gallery</a></li>
-       
+        <li><a href="../Pages/ContactPage.html">Contact</a></li>     
        </div>
          </div>  
     <div class="itemmenu"><a href="../Pages/GalleryPage.html">Gallery</a></div>
