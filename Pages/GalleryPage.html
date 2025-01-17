@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseFE</title>
+  
+    <script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/jquery.lightbox-0.5.pack.js" type="text/javascript"></script>
+	<script src="../js/jquery.lightbox-0.5.js" type="text/javascript"></script>
+	<script src="../js/lightbox.js" type="text/javascript"></script>
+	<!--<script src="js/lightbox.js" type="text/javascript"></script>-->
+
+	<script type="text/javascript">
+
+	$(function() {
+		$('#gallery a').lightBox({fixedNavigation:true});
+	});
+
+  
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+/*Gallery*/
+  let slideIndex = 1;
+
+showSlides();
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+ 
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+
+  let i = 0;
+  while (i < slides.length) {
+    slides[i].style.display = "none";  
+    i++;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+ setTimeout(showSlides, 3000); //
+
+  // if (n > slides.length) {slideIndex = 1}
+  // if (n < 1) {slideIndex = slides.length}
+  // for (i = 0; i < slides.length; i++) {
+  //   slides[i].style.display = "none";
+  // }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  // slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
+  captionText.innerHTML = "Our Pets";
+}
+    </script>      
+    <link rel="stylesheet" href="../css/MainCss.css">
+    <link rel="stylesheet" href="../css/Csspage3.css">  
+    <link rel="stylesheet" href="../css/jquery.lightbox-0.5.css" type="text/css" media="screen" />
+	
+    <style>
+        .innerhead{  
+        background-image:url('../images/Petsheader6.jpg');
+        }
+        
+       @media (max-width:600px){
+        .innerhead{
+        
+          background-image:url('../images/puppyn6.jpg');
+        }
+    } 
+
+    /* CSS Galllll  
+    * {
+  box-sizing: border-box;
+}*/
+
+body{
+  background-color: #F8F8F8;
+}
+.header{
+  height: 100px;
+  background-color: white;
+}
+.innerhead{
+  margin: 30px;
+  float: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:mediumorchid;
+  font-size: 14pt;
+  box-shadow: 5px 5px 5px 0.7px rgba(221, 160, 221, 0.692);
+}
+.page{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerg {
+  position: relative;
+  width: 1100px;
+  /* height: 680px; */
+  margin:0 auto;
+}
+.inner-section{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:40px;
+  width:1100px;
+  margin-right: auto;
+  margin-left: auto;
+  gap:15em;
+
+}
+
+@media only screen and (max-width:600px) {
+  .inner-section{
+  max-width:600px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color:mistyrose;
+  padding: 2px 16px;
+  color:darkmagenta;
+  width: 1100px;
+  height: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.details1{
+  width:30%;
+  padding: 30px;
+  display: flex;
+  box-shadow: 5px 5px 5px 0.7px rgba(153, 153, 153, .3);
+}
+
+@media (max-width:600px) {
+  .details1{
+    width:80%;
+
+  }
+  
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.row{
+  display: none;
+}
+      </style>
+      <script>
+      
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction1() {
+ document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>  
+</head>
+<body onload="currentSlide(1)">
+<div class="container">
+  <div class="navmain_navbar">
+    <div class="itemmenu">
+    <a href="../index.html">About</a></div>
+    <div class="dropdownmenu_show">
+      <button onclick="myFunction();" class="dropbtn">More <i class="fa fa-caret-down"></i> </button>
+
+     <div class="dropdown-content"  id="myDropdown">
+      <li><a href="../Pages/About.html">Servises</a></li>
+      <li><a href="../Pages/GalleryPage.html">Gallery</a></li>
+      <li><a href="../Pages/ContactPage.html">Contact</a></li>
+     </div>
+       </div>  
+       <div class="dropdownmenu_show1">
+        <button onclick="myFunction1();" class="dropbtn">Contacts <i class="fa fa-caret-down"></i> </button>
+
+       <div class="dropdown-content"  id="myDropdown1">
+        <li><a href="../Pages/PriceList.html">PriceList</a></li>
+        <li><a href="../Pages/GalleryPage.html">Gallery</a></li>
+       
+       </div>
+         </div>  
+    <div class="itemmenu"><a href="../Pages/GalleryPage.html">Gallery</a></div>
+    <div class="itemmenu"><a class="homebtn" href="../index.html">Home</a></div>
+      
+ <div class="columns4">
+  <ul>
+  <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a></li>
+  <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i> </a></li>
+  <li><a href="https://bg.linkedin.com/" target="_blank">  <i class="fa-brands fa-square-instagram  fa-2x"></i></a></li>                 
+</ul>
+</div>
+</div>
+<header class="header1">
+  <div class="containerg">
+
+    <!-- Full-width images with number text -->
+  
+    <div class="mySlides">
+      <div class="numbertext">1/5</div>
+        <img src="../images/Innergallerypics/cat1u.jpg" style="width:100%;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2/5</div>
+        <img src="../images/Innergallerypics/cat2n.jpg" style="width:100%;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3/5</div>
+        <img src="../images/Innergallerypics/cat3n.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4/5</div>
+        <img src="../images/Innergallerypics/guinea_pig.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5/5</div>
+        <img src="../images/Innergallerypics/image3.jpg" style="width:100%">
+    </div>
+
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../images/Innergallerypics/cat1u.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../images/Innergallerypics/cat2n.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="../images/Innergallerypics/cat3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../images/Innergallerypics/guinea_pig.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../images/Innergallerypics/image3.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+  
+    
+    </div>
+  </div>
+        </header>
+        <main id="content-page">
+            <ul id="gallery"><li><a href="./images/Galleryimages/image1.jpg">
+            <img src="../images/Galleryimages/thumb_image1.jpg" title="For this example: $('#gallery a').lightBox();"></a></li>
+            <li><a href="../images/Galleryimages/image2.jpg"><img src="../images/Galleryimages/thumb_image2.jpg"></a>
+            </li>
+            <li><a href="../images/Galleryimages/image3.jpg"><img src="../images/Galleryimages/thumb_image3.jpg"></a> </li>
+            <li><a href="../images/Galleryimages/image4.jpg"><img src="../images/Galleryimages/thumb_image4.jpg"></a> </li>
+            <li><a href="../images/Galleryimages/image5.jpg"><img src="../images/Galleryimages/thumb_image5.jpg"></a> </li>
+            <li><a href="../images/Galleryimages/image6.jpg"><img src="../images/Galleryimages/thumb_image6.jpg"></a> </li>
+            <li><a href="../images/Galleryimages/image7.jpg"><img src="../images/Galleryimages/thumb_image7.jpg"></a> </li>
+        </ul>
+        <section class="content sponsors">
+            <hr/>
+      <div class="wrapper">
+        <h2>Sponsors</h2>
+        <ul class="sponsors-list">
+          <li><a href=""><img src="../images/sponsor1.webp"></a></li>
+          <li><a href=""><img src="../images/sponsor2.webp"></a></li>
+          
+        </ul>
+      </div>
+          </section>
+        </main>
+<!-- </div> -->
+<footer class="classfooter">
+    <div class="footercontainer">
+      <div class="columns1">                            
+        <ul>
+        <li><a href="../index.html"><h2>Pet Hotel</h2></a></li>   
+        <li><a href="../Pages/ContactPage.html"><h2>Contact US</h2></a></li>
+        <li> <a href="../index.html"><h2>For Us</h2></a></li>
+        </ul>               
+</div>
+<div class="columns2">
+<h2>ADDRESS</h2>
+<ul><li><a href="">  1265 Sofiya 1000</a></li>             
+<li><a></a href=""><i class="fa-solid fa-mobile-screen-button"></i> &nbsp;301-387-7729</a></li>
+<li><a></a href=""><i class="fa-regular fa-envelope"></i>  &nbsp;testgmail.com</a></li></ul>
+</div>
+<div class="columns3">
+<h2>WORKING HOURS</h2>
+<ul>
+<li><i class="fa-regular fa-clock"></i> &nbsp;Monday - Friday 08:00 – 18:00</li>
+<li><i class="fa-regular fa-clock"></i> &nbsp;Saturday - Sunday 09:00 – 15:00</li>
+
+</ul>
+</div>
+<div class="columns4">
+        <ul>
+        <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i> </a></li>
+        <li><a href="https://bg.linkedin.com/" target="_blank">  <i class="fa-brands fa-square-instagram  fa-2x"></i></a></li>              
+        </ul>
+</div>   
+    </div>
+</footer>
+</div>
+</body>
+</html>

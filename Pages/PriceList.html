@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseFE</title>
+      <link rel="stylesheet" href="../css/MainCss.css"> 
+    <link rel="stylesheet" href="../css/CssPage5.css"> 
+    <style>
+       .innerhead{
+           
+           background-image:url('../images/puppyn4.jpg');
+       }
+  
+      @media (max-width:600px){
+        .innerhead{
+        
+          background-image:url('../images/DogsMobile1.jpg');
+        }
+    } 
+    </style>
+    <script>
+  
+function myFunction() {
+ document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunction1() {
+ document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>  
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+<body>
+<div class="container">
+  <div class="navmain_navbar">
+    <div class="itemmenu">
+    <a href="../index.html">About</a></div>
+
+   <div class="dropdownmenu_show"><button onclick="myFunction();" class="dropbtn">
+    More  <i class="fa fa-caret-down"></i></button>
+                
+   <div class="dropdown-content" id="myDropdown">
+        <li><a href="../Pages/About.html">Services</a></li>
+        <li><a href="../Pages/GalleryPage.html">Gallery</a></li>
+       
+    </div>
+    </div>
+    <div class="dropdownmenu_show"><button onclick="myFunction1();" class="dropbtn">
+      Contacts <i class="fa fa-caret-down"></i></button>
+                  
+     <div class="dropdown-content" id="myDropdown1">
+          <li><a href="../Pages/PriceList.html">PriceList</a></li>
+          <li><a href="../Pages/ContactPage.html">Contact</a></li>
+         
+      </div>
+      </div> 
+     
+    <div class="itemmenu"><a href="../Pages/GalleryPage.html">Gallery</a></div> 
+    <div class="itemmenu"><a class="homebtn" href="../index.html">Home</a></div>                        
+     <div class="columns4">
+        <ul>
+        <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i> </a></li>
+        <li><a href="https://bg.linkedin.com/" target="_blank">  <i class="fa-brands fa-square-instagram  fa-2x"></i></a></li>                 
+    </ul>
+</div>   
+</div>
+<header class="header1">
+    <div class="innerhead">
+            <div class="logo"><a href="../index.html"><img src="../images/pets-hotel-sign_35010.png"></a> </div>    
+            <div class="star"><i class="fa-regular fa-star"></i></div> 
+            <div class="innertext"><h2>We explore the most appropriate metods of aducating your pets and care with attention to your beloved!</h2></div>
+        </div>
+        <!-- <ul  class="menu1">
+            <li><a href="./index.html">Начало</a></li>
+            <li><a href="./Services.html">Услуги</a></li>
+            <li><a href="./GalleryPage.html">Галерия</a></li>
+            <li><a href="./ContactPage.html">Контакти</a></li>
+            <li><a href="./PriceList.html">Ценоразпис</a></li>
+        </ul> -->
+        <hr/>
+        </header>
+        <main id="content-page">          
+            <div class="content-main">        
+            <div class="classcol1">
+            <h2>PriceList for Dogs:</h2>
+            <br/>
+            <p>
+              Main Resort = $38 (Includes all Food/Bedding and an internal unit with all day access to their very own grassed back yard)
+              Luxury Lodge = $60 (Air conditioned units, Fans, LED TV’s, Surround Sound music, Human beds, Fully turfed back yards)
+              Special Care = $5 extra per day (Medication or Own Food)
+              Special Care = $10 extra per day (Medication and Own Food)         </p>
+           </div>
+           <div class="classcol2">
+            <h2>Pricelist for cats:</h2>
+            <br/>
+            <p>
+
+              Per day = $28 (Includes all Food/Bedding, private climate controlled unit and daily access to our cat play center)
+              Garden Suite = $40 (Luxury unit with private court yard)
+              Special Care = $5 extra per day (Medication or Own Food)
+              Special Care = $10 extra per day (Medication and Own Food)</p>
+           </div>                 
+           <div class="classcol1">
+            <h2>Other pets:</h2>
+            <br/>
+            <p>$18 per cage (max 2 per cage) housed in our bird sanctuary.
+              Open Aviary = Call for Quote
+                </p>
+            </div>
+           
+    </div>
+    <section class="content sponsors">
+        <hr/>
+  <div class="wrapper">
+    <h2>Sponsors</h2>
+    <ul class="sponsors-list">
+      <li><a href=""><img src="../images/sponsor1.webp"></a></li>
+      <li><a href=""><img src="../images/sponsor2.webp"></a></li>
+      
+    </ul>
+  </div>
+      </section>
+    </main>
+    <!-- </div> -->
+<footer class="classfooter">
+<div class="footercontainer">
+  <div class="columns1">                     
+    <ul>
+    <li><a href="../index.html"><h2>Pet Hotel</h2></a></li>   
+    <li><a href="../Pages/ContactPage.html"><h2>Contact US</h2></a></li>
+    <li> <a href="../index.html"><h2>For Us</h2></a></li>
+    </ul>               
+</div>
+<div class="columns2">
+<h2>ADDRESS</h2>
+<ul><li><a href="">  1265 Sofiya 1000</a></li>             
+<li><a></a href=""><i class="fa-solid fa-mobile-screen-button"></i> &nbsp;301-387-7729</a></li>
+<li><a></a href=""><i class="fa-regular fa-envelope"></i>  &nbsp;testgmail.com</a></li></ul>
+</div>
+<div class="columns3">
+<h2>WORKING HOURS</h2>
+<ul>
+<li><i class="fa-regular fa-clock"></i> &nbsp;Monday - Friday 08:00 – 18:00</li>
+<li><i class="fa-regular fa-clock"></i> &nbsp;Saturday - Sunday 09:00 – 15:00</li>
+
+</ul>
+</div>
+<div class="columns4">
+    <ul>
+    <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x"></i> </a></li>
+    <li><a href="https://bg.linkedin.com/" target="_blank">  <i class="fa-brands fa-square-instagram  fa-2x"></i></a></li>              
+    </ul>
+</div>  
+</div>    
+</footer>
+</div>
+</body>
+</html>

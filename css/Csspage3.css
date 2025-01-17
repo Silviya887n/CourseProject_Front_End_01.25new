@@ -1,0 +1,116 @@
+ 
+     #gallery{
+        list-style-type: none;
+     }
+
+
+     #gallery  li {
+        padding: 15px;
+        display:inline-block;
+    }
+
+     main{
+        width: 1300px;
+        margin:0 auto;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        background-color: #ECECEC;
+        padding: 15px;
+        
+    }
+
+    .header1{                      
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    @media only screen and (max-width:600px) {
+        main {           
+          max-width: 600px; 
+          width:340px;
+          margin-left:0;
+          margin-right:0;
+          margin-top: 0;
+          } 
+    }
+
+    @media  only  screen and  (max-width:600px)   {
+        #gallery  li {
+         display: flex;
+         flex-direction:column;
+            
+        }
+    }
+     .columns1{
+     width: 30%;     
+     line-height: 2em;
+     padding: 30px;
+     }
+     .columns2{
+     line-height: 2em;
+     width: 30%;
+     padding: 30px;
+     }
+     .columns3{
+     line-height: 2em;
+     width: 30%;
+     padding: 30px;
+     }       
+     
+  .columns1 ul li  {
+       
+       list-style-type: none;
+       font-family:  Arial, Helvetica, sans-serif  ;
+       font-size: 14px;
+     
+   }
+   .columns2 ul li  {
+       
+       list-style-type: none;
+      
+   }
+   .columns3 ul li  {
+       
+       list-style-type: none;
+      
+   }
+   .columns1 li  a{
+         text-decoration: none;
+         margin-bottom: 2em;
+     }
+   .columns2 ul li a{
+         text-decoration: none;
+     }
+   
+  .fa-shield-dog{
+     width: 60px;
+     height: 60px;
+   }
+  .articleclass{
+     width: 1300px;
+     margin:0 auto;
+ }
+
+.img1{
+ width:300px;
+ height: 384px;
+}
+/*.logo{
+         display: flex;
+         flex-wrap: wrap;                
+         padding-top:20px;
+         padding-left: 20px;
+         width: 400px;
+         height: 60px;
+     }
+ .logo img{
+ width: 80px;
+ height: 80px;
+}
+.star{
+     width:60px;     
+     position: absolute;
+     bottom: 15px;
+     right: 010px;             
+   
+ }*/
