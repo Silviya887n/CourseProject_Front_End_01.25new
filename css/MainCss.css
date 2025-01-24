@@ -2,6 +2,10 @@
             padding:0;
             margin: 0;
         }
+
+        body{
+          font-family: 'PT Serif', serif;
+        }
         .header1{
             height: auto; 
             /* height:514px; */
@@ -130,7 +134,7 @@
        
   
 
-        /* @media (max-width:600px){.innerhead{ new1
+        /* Test change1  @media (max-width:600px){.innerhead{ new1
           position: relative;
           background-image:url('./images/Petsheader4.jpg');
           height: 500px;
@@ -350,6 +354,7 @@
     .dropdownmenu_show{
       
       display: block;
+      color:darkblue;
      
     }
     .dropdownmenu_show ul{
@@ -369,7 +374,7 @@
       min-width: 160px;
       width: auto;*/ 
       z-index: 1;
-      color:#fff;
+     
 
     }
     
@@ -481,6 +486,20 @@
      margin-top:30px;
   }
 
+  @media only screen and  (max-width:600px) {
+    .wrapper ul{   
+      display: grid;
+      margin-top:30px auto;
+    }
+    
+  }
+
+  @media (max-width:600px) {
+    .wrapper  h2{
+      color: crimson;
+    }
+    
+  }
   .wrapper{
     margin-top:30px;
   }
