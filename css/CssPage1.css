@@ -70,6 +70,13 @@
         }
     }
 
+    @media (max-width: 1300px) {
+        .innercontentpage {
+            max-width: 1300px;
+            min-width: 340px;
+            width: 100%;
+        }
+      }
        
   
 
@@ -108,7 +115,7 @@
          
         
          main{
-             width: 1300px;
+            
              margin:0 auto;
              font:   16px Arial, Helvetica, sans-serif ;
              line-height: 2em;
