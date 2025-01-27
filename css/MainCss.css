@@ -26,6 +26,16 @@
             width: 600px;               
         } 
          }
+
+         @media (max-width:1300px){
+          .header1{                         
+            margin-left: 0;
+            margin-right: 0; 
+            max-width: 1300px;
+           
+                    
+        } 
+         }
                
          .innerhead {   
           position: relative;    
