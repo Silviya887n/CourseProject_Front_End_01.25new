@@ -201,7 +201,8 @@ color:#479071;
    margin-bottom: 40px;
 }
 .innermain3{
-  display: flex;
+   display: flex;
+   flex-wrap: wrap;
    justify-content:space-around;
    gap:2.5em;
    margin-bottom: 40px;
@@ -209,6 +210,7 @@ color:#479071;
 
 .innermain4{
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
   gap:2em;
 }
