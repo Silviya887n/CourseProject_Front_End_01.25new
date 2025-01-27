@@ -146,13 +146,13 @@ width: 30%;
 .columns2 ul li a{
     text-decoration: none;
 }
-.columns4 ul li{
+/* .columns4 ul li{
 list-style-type: none;
 }
 .columns4 ul li{
 display: inline-block;
 padding-right:7px;
-}
+} */
 .innerhead p{
 margin: 40px;
 float: left;
