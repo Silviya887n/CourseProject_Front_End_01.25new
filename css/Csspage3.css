@@ -10,7 +10,7 @@
     }
 
      main{
-        width: 1300px;
+        max-width: 1300px;
         margin:0 auto;
         margin-top: 30px;
         margin-bottom: 60px;
@@ -95,6 +95,195 @@
  width:300px;
  height: 384px;
 }
+.innerhead{  
+    background-image:url('../images/Petsheader6.jpg');
+    }
+    
+   @media (max-width:600px){
+    .innerhead{
+    
+      background-image:url('../images/puppyn6.jpg');
+    }
+} 
+
+/* CSS Galllll  
+* {
+box-sizing: border-box;
+}*/
+
+body{
+background-color: #F8F8F8;
+}
+.header{
+height: 100px;
+background-color: white;
+}
+.innerhead{
+margin: 30px;
+float: left;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:mediumorchid;
+font-size: 14pt;
+box-shadow: 5px 5px 5px 0.7px rgba(221, 160, 221, 0.692);
+}
+.page{
+display: flex;
+flex-wrap: wrap;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerg {
+position: relative;
+width: 1100px;
+/* height: 680px; */
+margin:0 auto;
+}
+
+
+
+@media (max-width:600px) {
+.containerg {
+width: 600px;
+min-width:250px;
+} 
+}
+
+
+@media (max-width:1300px) {
+.containerg {
+width: auto;
+
+}
+
+}
+.inner-section{
+display: flex;
+flex-wrap: wrap;
+margin-top:40px;
+width:1100px;
+margin-right: auto;
+margin-left: auto;
+gap:15em;
+
+}
+
+@media only screen and (max-width:600px) {
+.inner-section{
+max-width:600px;
+min-width: 300px;
+display: flex;
+flex-direction: column;
+}
+
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color:mistyrose;
+padding: 2px 16px;
+color:darkmagenta;
+width: auto;
+height: 50px;
+}
+
+@media (max-width:600px) {
+.caption-container {
+max-width:600px;
+min-width: 250px;
+}
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+.details1{
+width:30%;
+padding: 30px;
+display: flex;
+box-shadow: 5px 5px 5px 0.7px rgba(153, 153, 153, .3);
+}
+
+@media (max-width:600px) {
+.details1{
+width:80%;
+
+}
+
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+.row{
+display: none;
+}
+
+
+
+
 /*.logo{
          display: flex;
          flex-wrap: wrap;                
