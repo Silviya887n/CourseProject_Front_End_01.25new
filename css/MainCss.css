@@ -5,6 +5,9 @@
 
         body{
           font-family: 'PT Serif', serif;
+          font-family:  Arial, Helvetica, sans-serif  ;
+          font-size: 14px;
+          color: black;
         }
         .header1{
             height: auto; 
@@ -349,8 +352,7 @@
       /* color:#161515;  */
     }
     .navmain_navbar a:hover{
-      text-decoration:underline;
-      width:100px;
+      text-decoration:underline;   
     
     }
 
@@ -410,11 +412,18 @@
        text-decoration: none;
       }
 
- #menu a:hover{
+   /* .mobilemenu a:hover{
+        background-color:#dee2e6;
+  } */
+
+
+
+ /* #menu a:hover{
   background-color:#dee2e6;
   width: auto;
   text-decoration: none;
- }
+  color:darkblue;
+ } */
     /*second dropdown*/
     .dropdown-content1 { 
       background-color: #ECECEC;   
@@ -536,16 +545,25 @@
 
   /*drp menu mobile*/
   .menu-icon { 
-   
+    width:25px;
     font-size: 24px; cursor: pointer;
     display: none;
  } 
 
+ .fa .fa-bars{
+  width: auto;
+ }
+
   .menu-icon ul { list-style-type: none; margin: 0; padding: 0; display: flex; } 
   .menu-icon li { margin: 0 10px; } 
   .menu-icon a { color: white; text-decoration: none; } 
-  .hidden { display: none; } 
+  /* .hidden { display: none; }  */
   
+
+  .show{
+ display: inline-block;
+  }
+
   @media (max-width: 600px) {
     .menu-icon  ul { flex-direction: column; width: 100%; } 
     .menu-icon  li { text-align: center; padding: 10px 0; } 
@@ -559,14 +577,6 @@
   }
 }
 
-  #menu li{
- list-style-type: none;
- padding: 1em;
-  }
-
-  #menu a:hover{
-    background-color:#dee2e6;
-  }
     @media (max-width:600px){
     .navmain_navbar .itemmenu{
       display: none;
@@ -589,7 +599,7 @@
   display: none;
  }
   
-}  
+}
 
   
    @media (max-width:600px){
@@ -598,6 +608,32 @@
   }
 } 
 
+
+#menu a{
+  display: block;
+  padding: 1em;
+  width: 100%;
+  color:#1a5972;
+}
+ 
+#menu a:hover {
+background-color:#0b8579;
+color: #fff;
+text-decoration: none;
+} 
+
+#menu{
+  display: none;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .mobilemenu{ 
+    width:100%;  
+  }
+}
 
 
    

@@ -65,6 +65,25 @@ window.onclick = function(event) {
 }
 function toggleMenu()
 { var menu = document.getElementById('menu');
- if (menu.classList.contains('hidden')) 
- { menu.classList.remove('hidden'); } 
- else { menu.classList.add('hidden'); } }
+
+  if (menu.style.display==="block"){
+    
+    menu.style.display="none";
+  }
+  else{
+    menu.style.display="block";
+  }
+
+
+
+//  if (menu.classList.contains('hidden')) 
+//  { 
+//   menu.classList.remove('hidden'); 
+//   menu.classList.add('show');
+// } 
+//  else 
+//  { 
+//   menu.classList.remove('show');
+//   menu.classList.add('hidden'); }
+
+}
